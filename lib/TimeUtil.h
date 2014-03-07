@@ -24,6 +24,10 @@
 //
 //  Created by Michael Tsai on 2011/10/06.
 
+//  Usage: all APIs are available through static call, e.g. [TimeUtil today];
+//
+//  The "day" APIs(such as today, dateFromToday) return 00:00 of that day.
+
 #import <Foundation/Foundation.h>
 
 @interface TimeUtil : NSObject
@@ -46,7 +50,7 @@
 + (NSString *)timeToRelatedDescriptionFromNow:(NSDate *)date limitedRange:(int)days;
 
 + (int)daysBetweenDate:(NSDate *)date1 andDate:(NSDate *)date2;
-+ (int)monthBetweenDate:(NSDate *)date1 andDate:(NSDate *)date2;
++ (int)monthsBetweenDate:(NSDate *)date1 andDate:(NSDate *)date2;
 
 + (NSDate *)thisWeekOfDate:(NSDate *)date;
 + (NSDate *)lastWeekOfDate:(NSDate *)date;

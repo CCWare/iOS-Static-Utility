@@ -563,7 +563,7 @@
     return (int)[difference day];
 }
 
-+ (int)monthBetweenDate:(NSDate *)date1 andDate:(NSDate *)date2
++ (int)monthsBetweenDate:(NSDate *)date1 andDate:(NSDate *)date2
 {
     NSDate *fromDate;
     NSDate *toDate;
